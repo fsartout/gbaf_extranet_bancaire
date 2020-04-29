@@ -1,0 +1,50 @@
+*
+{
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
+}
+
+html, body
+{
+	height: 100%;
+
+	margin: 0;
+
+	padding: 0;
+}
+body
+{
+	display: flex;
+	flex-direction: column;
+}
+
+/* --- POLICE DE CARACTERE --- */
+
+h1
+{
+	font-family: 'open_sansbold', Arial, sans-serif;
+}
+
+h2, h3
+{
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+}
+
+h1
+{	
+	font-size: 2.25em;
+}
+
+h2
+{
+	font-size: 1.5em;
+}
+
+h3
+{
+	font-size: 1.25em;
+}
+
+/* --- POLICE DE CARACTERE --- */

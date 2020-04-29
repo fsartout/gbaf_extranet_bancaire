@@ -1,0 +1,1650 @@
+/* --- HEADER (header.php) --- */
+
+header
+{
+	position: fixed;
+	top: 0;
+
+	background-color: rgba(255, 255, 255, 0.95);
+}
+
+#header_container
+{
+	display: flex;
+
+	height: 100px;
+	width: 50%;
+
+	margin: auto;
+
+	border-bottom: 1px solid rgb(250, 5, 5);
+
+	align-items: center;
+}
+
+#header_container > a, img
+{
+	width: 50px;
+}
+
+#header_all_user_information
+{
+	display: flex;
+	align-items: center;
+}
+
+#header_user_information
+{
+	display: flex;
+
+	text-align: right;
+}
+
+.header_hello
+{
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+}
+
+.header_firstname, .header_name
+{
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+}
+
+#header_user_information a
+{
+	text-decoration: none;
+}
+
+#header_login_button, #header_logout_button
+{
+	width: 175px;
+
+	margin-left: 50px;
+}
+
+#header_login_button a, #header_logout_button a
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+	width: 175px;
+
+	background: url(/gbaf/picture/icon/login_logout_black.png) rgb(225, 225, 225) no-repeat center right 12.5px;
+	background-size: 17.5px;
+
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+	text-align: left;
+}
+
+#header_login_button a p, #header_logout_button a p
+{
+	margin-left: 17.5px;
+}
+
+#header_login_button a:hover
+{
+	background: url(/gbaf/picture/icon/login_logout_white.png) rgb(0, 150, 0) no-repeat center right 12.5px;
+	background-size: 17.5px;
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	color: rgb(255, 255, 255);
+}
+
+#header_logout_button a:hover
+{
+	background: url(/gbaf/picture/icon/login_logout_white.png) rgb(250, 5, 5) no-repeat center right 12.5px;
+	background-size: 17.5px;
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	color: rgb(255, 255, 255);
+}
+
+/* --- HEADER (header.php) --- */
+
+/* --- PAGE DE CONNEXION (index.php) --- */
+
+#login_container
+{
+	width: 50%;
+
+	margin: 50px auto 50px auto;
+}
+
+#login_logo
+{
+	display: flex;
+
+	width: 75px;
+
+	margin: 0 auto 100px auto;
+}
+
+#login_container h1
+{
+	margin-bottom: 100px;
+
+	color: rgb(50, 50, 50);
+	text-align: center;
+}
+
+#login_container fieldset
+{
+	width: auto;
+
+	padding: 12.5px 12.5px 25px 12.5px;
+
+	background-color: rgb(225, 225, 225);
+
+	border: none;
+	border-radius: 25px;
+}
+
+#login_container input[type="text"]
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+
+	margin-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	border: none;
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-align: center;
+
+	/* Permet d'aligner verticalement les champs de saisi
+	sur la même ligne de base (évite les débords) */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#login_container input[type="password"]
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+
+	margin-bottom: 50px;
+
+	padding-left: 25px;
+	padding-right: 25px;
+
+	border: none;
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-align: center;
+
+	/* Permet d'aligner verticalement les champs de saisi
+	sur la même ligne de base (évite les débords) */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#login_container input[type="text"]:focus,
+#login_container input[type="password"]:focus
+{
+	background-color: rgb(255, 255, 255);
+
+	border: 1px solid rgb(250, 5, 5);
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#error_message
+{
+	margin: -25px 0 50px 0;
+}
+
+#error_message p
+{
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+	text-align: center;
+}
+
+#login_container input[type="submit"]
+{
+	height: 37.5px;
+
+	background-color: rgb(125, 125, 125);
+
+	border: none;
+	border-radius: 25px;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(255, 255, 255);
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#login_container input[type="submit"]:hover
+{
+	background-color: rgb(0, 150, 0);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	cursor: pointer;
+}
+
+#login_container fieldset p
+{
+	margin: 25px 0 0 0;
+
+	text-align: center;
+}
+
+#login_container fieldset p a
+{
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+}
+
+/* --- PAGE DE CONNEXION (index.php) --- */
+
+/* --- PAGE DU COMPTE A LA PREMIERE CONNEXION (account_first_connection.php) --- */
+
+#account_first_connection_container
+{
+	width: 50%;
+
+	margin: 50px auto 100px auto;
+}
+
+#account_first_connection_logo
+{
+	display: flex;
+
+	width: 75px;
+
+	margin: 0 auto 100px auto;
+}
+
+#account_first_connection_container h1
+{
+	margin-bottom: 100px;
+
+	color: rgb(50, 50, 50);
+	text-align: center;
+}
+
+#account_first_connection_container fieldset
+{
+	width: auto;
+
+	padding: 12.5px 12.5px 25px 12.5px;
+
+	background-color: rgb(225, 225, 225);
+
+	border: none;
+	border-radius: 25px;
+}
+
+#account_first_connection_container input[type="text"],
+#account_first_connection_container input[type="password"]
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+
+	margin-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	border: none;
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-align: center;
+
+	/* Permet d'aligner verticalement les champs de saisi
+	sur la même ligne de base (évite les débords) */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#account_first_connection_container input[type="text"]:focus,
+#account_first_connection_container input[type="password"]:focus
+{
+	background-color: rgb(255, 255, 255);
+
+	border: 1px solid rgb(250, 5, 5);
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#error_password_confirmation
+{
+	margin: 0 0 50px 0;
+}
+
+#error_password_confirmation p
+{
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+	text-align: center;
+}
+
+/*
+
+#error_identical_username
+{
+	margin: 0 0 50px 0;
+}
+
+#error_identical_username p
+{
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+	text-align: center;
+}
+
+*/
+
+#account_first_connection_container input[type="submit"]
+{
+	height: 37.5px;
+
+	background-color: rgb(125, 125, 125);
+
+	border: none;
+	border-radius: 25px;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(255, 255, 255);
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#account_first_connection_container input[type="submit"]:hover
+{
+	background-color: rgb(0, 150, 0);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	cursor: pointer;
+}
+
+#account_first_connection_container .required_fields
+{
+	margin-top: 25px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+	text-align: center;
+}
+
+#account_index_button a
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+	width: 175px;
+
+	margin: 100px auto 0 auto;
+
+	background-color: rgb(225, 225, 225);
+
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+	text-align: center;
+}
+
+#account_index_button a:hover
+{
+	background-color: rgb(50, 50, 50);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	color: rgb(255, 255, 255);
+}
+
+/* --- PAGE DU COMPTE A LA PREMIERE CONNEXION (account_first_connection.php) --- */
+
+/* --- PAGE DU COMPTE (account.php) --- */
+
+#account_container
+{
+	width: 50%;
+
+	margin: 100px auto 100px auto;
+	padding-top: 100px;
+}
+
+#account_container h1
+{
+	margin-bottom: 100px;
+
+	color: rgb(50, 50, 50);
+	text-align: center;
+}
+
+#account_container fieldset
+{
+	width: auto;
+
+	padding: 12.5px 12.5px 25px 12.5px;
+
+	background-color: rgb(225, 225, 225);
+
+	border: none;
+	border-radius: 25px;
+}
+
+#account_container input[type="text"],
+#account_container input[type="password"]
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+
+	margin-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	border: none;
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-align: center;
+
+	/* Permet d'aligner verticalement les champs de saisi
+	sur la même ligne de base (évite les débords) */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#account_container input[type="text"]:focus,
+#account_container input[type="password"]:focus
+{
+	background-color: rgb(255, 255, 255);
+
+	border: 1px solid rgb(250, 5, 5);
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#error_password_confirmation
+{
+	margin: 0 0 50px 0;
+}
+
+#error_password_confirmation p
+{
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+	text-align: center;
+}
+
+#error_identical_username
+{
+	margin: 0 0 50px 0;
+}
+
+#error_identical_username p
+{
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+	text-align: center;
+}
+
+#account_container input[type="submit"]
+{
+	height: 37.5px;
+
+	background-color: rgb(125, 125, 125);
+
+	border: none;
+	border-radius: 25px;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(255, 255, 255);
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#account_container input[type="submit"]:hover
+{
+	background-color: rgb(0, 150, 0);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	cursor: pointer;
+}
+
+#account_container .required_fields
+{
+	margin-top: 25px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+	text-align: center;
+}
+
+#account_home_button a
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+	width: 175px;
+
+	margin: 100px auto 0 auto;
+
+	background-color: rgb(225, 225, 225);
+
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+	text-align: center;
+}
+
+#account_home_button a:hover
+{
+	background-color: rgb(50, 50, 50);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	color: rgb(255, 255, 255);
+}
+
+/* --- PAGE DU COMPTE (account.php) --- */
+
+/* --- PAGE DE MOT DE PASSE OUBLIÉ (forgot_password.php) --- */
+
+#forgot_password_container
+{
+	width: 50%;
+
+	margin: 50px auto 50px auto;
+}
+
+#forgot_password_logo
+{
+	display: flex;
+
+	width: 75px;
+
+	margin: 0 auto 100px auto;
+}
+
+#forgot_password_container h1
+{
+	margin-bottom: 100px;
+
+	color: rgb(50, 50, 50);
+	text-align: center;
+}
+
+#forgot_password_container fieldset
+{
+	width: auto;
+
+	padding: 12.5px 12.5px 12.5px 12.5px;
+
+	background-color: rgb(225, 225, 225);
+
+	border: none;
+	border-radius: 25px;
+}
+
+#secret_question_display
+{
+	margin: 12.5px 0 25px 0;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-align: center;
+}
+
+#forgot_password_container input[type="text"], 
+#forgot_password_container input[type="password"]
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+
+	margin-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	border: none;
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-align: center;
+
+	/* Permet d'aligner verticalement les champs de saisi
+	sur la même ligne de base (évite les débords) */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#forgot_password_container input[type="text"]:focus,
+#forgot_password_container input[type="password"]:focus
+{
+	background-color: rgb(255, 255, 255);
+
+	border: 1px solid rgb(250, 5, 5);
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#forgot_password_container #error_message
+{
+	margin: 0 0 50px 0;
+}
+
+#forgot_password_container #error_message > p
+{
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+	text-align: center;
+}
+
+#forgot_password_container input[type="submit"]
+{
+	height: 37.5px;
+
+	background-color: rgb(125, 125, 125);
+
+	border: none;
+	border-radius: 25px;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(255, 255, 255);
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#forgot_password_container input[type="submit"]:hover
+{
+	background-color: rgb(0, 150, 0);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	cursor: pointer;
+}
+
+#forgot_password_login_page_button a
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+	width: 175px;
+
+	margin: 100px auto 0 auto;
+
+	background-color: rgb(225, 225, 225);
+
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+	text-align: center;
+}
+
+#forgot_password_login_page_button a:hover
+{
+	background-color: rgb(50, 50, 50);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	color: rgb(255, 255, 255);
+}
+
+/* --- PAGE DE MOT DE PASSE OUBLIÉ (forgot_password.php) --- */
+
+/* --- PAGE D'ACCUEIL (homepage.php) --- */
+
+#homepage_container
+{
+	width: 50%;
+
+	margin: 0 auto 100px auto;
+	padding-top: 100px;
+}
+
+#homepage_hero
+{
+	width: auto;
+
+	padding: 50px;
+
+	/* Permet d'indiquer le chemin de l'image
+	vers un dossier enfant different situe dans le meme dossier parent
+	(barre oblique (/) suivi du nom du dossier parent) */
+	background: url("/gbaf/picture/matthew-henry-VviFtDJakYk-unsplash.jpg")
+		fixed no-repeat center rgba(0, 0, 0, 0.5);
+
+	/* Permet d'ajouter un overlay (couleur superposée) sur l'image */
+	background-blend-mode: overlay;
+	background-size: cover;
+}
+
+#homepage_container h1
+{
+	color: rgb(255, 255, 255);
+}
+
+#homepage_container h1 ~ p
+{	
+	margin-top: 50px;
+
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+	text-align: justify;
+}
+
+#homepage_container p + ul
+{	
+	margin: 25px 0 50px 0;
+
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+	text-align: justify;
+}
+
+#homepage_container p + ul li
+{
+	width: auto;
+	
+	padding: 0 25% 0 25px;
+
+	list-style-position: inside;
+}
+
+#homepage_divider_bar
+{
+	height: 1px;
+	width: 25%;
+
+	margin: 100px auto 75px auto;
+
+	background-color: rgb(250, 5, 5);
+}
+
+#homepage_container h2
+{
+	padding-left: 50px;
+
+	color: rgb(50, 50, 50);
+}
+
+#homepage_container h2 + p
+{
+	width: auto;
+
+	margin-bottom: 100px;
+	padding: 0 50px 0 50px;
+
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 1em;
+	color: rgb(50, 50, 50);
+	text-align: justify;
+}
+
+#actors_description
+{
+	display: flex;
+
+	height: auto;
+	width: auto;
+
+	margin-bottom: 50px;
+
+	border-radius: 25px;
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+}
+
+#actors_description #actors_logo
+{
+	height: 175px;
+	width: 175px;
+
+	border-radius: 25px 0 0 25px;
+}
+
+#actors_description #actors_logo img
+{
+	height: 175px;
+	width: 175px;
+
+	border-radius: 25px 0 0 25px;
+
+	object-fit: cover;
+}
+
+#actors_description h3
+{
+	margin-right: 25px;
+	padding: 12.5px 0 12.5px 25px;
+
+	color: rgb(50, 50, 50);
+}
+
+#actors_description h3 + p
+{
+	margin-right: 25px;
+	padding: 0 0 12.5px 25px;
+
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 1em;
+	color: rgb(50, 50, 50);
+	text-align: justify;
+}
+
+#read_more
+{
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+#read_more a
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+	width: 125px;
+
+	margin: 7.5px 7.5px 7.5px 0;
+
+	background-color: rgb(225, 225, 225);
+
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+	text-align: center;
+}
+
+#read_more a:hover
+{
+	background-color: rgb(50, 50, 50);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	color: rgb(255, 255, 255);
+}
+
+/* --- PAGE D'ACCUEIL (homepage.php) --- */
+
+/* --- PAGE ACTEURS ET PARTENAIRES (actors_description.php) --- */
+
+#actors_description_container
+{
+	width: 50%;
+
+	margin: 100px auto 100px auto;
+	padding-top: 100px;
+}
+
+#actors_presentation #actors_logo
+{
+	text-align: center;
+}
+
+#actors_presentation #actors_logo img
+{
+	height: 125px;
+	width: auto;
+
+	border-radius: 25px;
+}
+
+#actors_presentation h2
+{
+	margin: 100px 0 12.5px 0;
+	color: rgb(50, 50, 50);
+}
+
+#actors_presentation h2 + p
+{
+	margin-bottom: 100px;
+
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 1em;
+	color: rgb(50, 50, 50);
+	text-align: justify;
+}
+
+#comment_container fieldset
+{
+	width: auto;
+
+	padding: 12.5px;
+
+	background-color: rgb(225, 225, 225);
+
+	border: none;
+	border-radius: 25px;
+}
+
+#comment_option
+{
+	display: flex;
+	justify-content: space-between;
+
+	width: auto;
+
+	margin: 12.5px 12.5px 50px 12.5px;
+}
+
+#comments_number
+{
+	display: flex;
+	align-items: center;
+
+	width: auto;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 1em;
+	color: rgb(50, 50, 50);
+	text-align: left;
+}
+
+#new_comment_button
+{
+	width: auto;
+}
+
+#new_comment_button a
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+	width: auto;
+
+	padding: 0 25px 0 25px;
+
+	background-color: rgb(125, 125, 125);
+
+	border-radius: 25px;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	text-align: center;
+}
+
+#new_comment_button a:hover
+{
+	background-color: rgb(50, 50, 50);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+}
+
+#like_dislike_button_content
+{
+	display: flex;
+	justify-content: flex-end;
+
+	height: 37.5px;
+	width: auto;
+}
+
+#like_button, #dislike_button
+{
+	display: flex;
+	align-items: center;
+
+	width: auto;
+
+	background-color: rgb(255, 255, 255);
+
+	border: none;
+	border-radius: 25px;
+}
+
+#like_button
+{
+	margin-right: 25px;
+}
+
+#like_button a, #dislike_button a
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+	width: auto;
+
+	padding: 0 12.5px 0 12.5px;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+}
+
+#like_button img, #dislike_button img
+{
+	width: 25px;
+
+	margin-left: 25px;
+}
+
+#like_button:hover, #dislike_button:hover
+{
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	cursor: pointer;
+}
+
+
+#comment_container textarea
+{
+	height: 125px;
+
+	margin-bottom: 12.5px;
+	padding: 17.5px 25px;
+
+	border: none;
+	border-radius: 25px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#comment_container textarea:focus
+{
+	background-color: rgb(255, 255, 255);
+
+	border: 1px solid rgb(250, 5, 5);
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#cancel_button a
+{
+	display: flex;
+	align-items: center;
+
+	float: right;
+
+	height: 37.5px;
+	width: 175px;
+
+	margin: 0 12.5px 0 0;
+
+	background-color: rgb(125, 125, 125);
+
+	border: none;
+	border-radius: 25px;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	text-align: center;
+}
+
+#cancel_button a:hover
+{
+	background-color: rgb(250, 5, 5);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	cursor: pointer;
+}
+
+#send_button
+{
+	float: right;
+
+	height: 37.5px;
+	width: 175px;
+
+	margin: 0 12.5px 0 0;
+
+	background-color: rgb(125, 125, 125);
+
+	border: none;
+	border-radius: 25px;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(255, 255, 255);
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#send_button:hover
+{
+	background-color: rgb(0, 150, 0);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	cursor: pointer;
+}
+
+#comment_container input[type="submit"]:focus
+{
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#comment_content_container
+{
+	clear: both;
+
+	width: auto;
+
+	margin-top: 12.5px;
+
+	padding: 17.5px 25px;
+
+	background-color: rgb(255, 255, 255);
+
+	border-radius: 25px;
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+}
+
+#comment_content_container #firstname_comment
+{
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+}
+
+#comment_content_container #date_comment
+{
+	margin-bottom: 25px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+}
+
+#comment_content_container #user_comment
+{
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-align: justify;
+}
+
+#top_comment_space:target
+/* Permet d'éviter que le header se superpose sur l'ancre de texte */
+{
+	margin-top: -175px;
+	padding-top: 175px;
+}
+
+/* --- PAGE ACTEURS ET PARTENAIRES (actors_description.php) --- */
+
+/* --- PAGE DES MENTIONS LEGALES (legal_notices.php) --- */
+
+#legal_notices_container
+{
+	width: 50%;
+
+	margin: 100px auto 100px auto;
+	padding-top: 100px;
+}
+
+#legal_notices_container h1
+{
+	margin-bottom: 100px;
+
+	color: rgb(50, 50, 50);
+	text-align: center;
+}
+
+#legal_notices_summary
+{
+	margin-bottom: 100px;
+
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 1em;
+	line-height: 2.5em;
+
+	list-style-type: none;
+}
+
+#legal_notices_summary li a
+{
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+}
+
+#legal_notices_summary li a:hover
+{
+	color: rgb(250, 5, 5);
+}
+
+#legal_notices_container h2
+{
+	margin-bottom: 12.5px;
+
+	color: rgb(50, 50, 50);
+}
+
+#legal_notices_container > p
+{
+	margin-bottom: 50px;
+
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 1em;
+	color: rgb(50, 50, 50);
+	text-align: justify;
+}
+
+#legal_notices_container h3
+{
+	margin-bottom: 25px;
+
+	color: rgb(100, 100, 100);
+}
+
+#legal_notices_container p + ul
+{	
+	margin-bottom: 50px;
+
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 1em;
+	color: rgb(50, 50, 50);
+	text-align: left;
+}
+
+#legal_notices_container p + ul li
+{
+	width: auto;
+
+	margin-bottom: 25px;
+	padding: 0 25% 0 25px;
+
+	list-style-position: inside;
+}
+
+#legal_notices_top_page_button a
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+	width: 175px;
+
+	margin: 100px auto 0 auto;
+
+	background-color: rgb(225, 225, 225);
+
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+	text-align: center;
+}
+
+#legal_notices_top_page_button a:hover
+{
+	background-color: rgb(50, 50, 50);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	color: rgb(255, 255, 255);
+}
+
+#top_page,
+#general_informations:target,
+#intellectual_property:target,
+#site_informations:target,
+#hypertext_links:target,
+#security:target
+/* Permet d'éviter que le header se superpose sur l'ancre de texte */
+{
+	margin-top: -125px;
+	padding-top: 125px;
+}
+
+/* --- PAGE DES MENTIONS LEGALES (legal_notices.php) --- */
+
+/* --- PAGE DE CONTACT (contact.php) --- */
+
+#contact_container
+{
+	width: 50%;
+
+	margin: 100px auto 100px auto;
+	padding-top: 100px;
+}
+
+#contact_container h1
+{
+	margin-bottom: 100px;
+
+	color: rgb(50, 50, 50);
+	text-align: center;
+}
+
+#contact_container > p
+{
+	margin-bottom: 50px;
+
+	font-family: 'open_sansregular', Arial, sans-serif;
+	font-size: 1em;
+	color: rgb(50, 50, 50);
+	text-align: center;
+}
+
+#contact_container fieldset
+{
+	width: auto;
+
+	padding: 12.5px 12.5px 25px 12.5px;
+
+	background-color: rgb(225, 225, 225);
+
+	border: none;
+	border-radius: 25px;
+}
+
+#contact_container input[type="text"],
+#contact_container input[type="email"],
+#contact_container input[type="tel"]
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+
+	margin-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	border: none;
+	border-radius: 50px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-align: center;
+
+	/* Permet d'aligner verticalement les champs de saisi
+	sur la même ligne de base (évite les débords) */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#contact_container textarea
+{
+	height: 125px;
+
+	margin-bottom: 50px;
+	padding: 17.5px 25px;
+
+	border: none;
+	border-radius: 25px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#contact_container input[type="submit"]
+{
+	height: 37.5px;
+
+	background-color: rgb(125, 125, 125);
+
+	border: none;
+	border-radius: 25px;
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(255, 255, 255);
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#contact_container input[type="text"]:focus,
+#contact_container input[type="email"]:focus,
+#contact_container input[type="tel"]:focus,
+#contact_container textarea:focus
+{
+	background-color: rgb(255, 255, 255);
+
+	border: 1px solid rgb(250, 5, 5);
+
+	/* Permet d'enlever l'encadré après avoir cliqué sur un champ de saisi */
+	outline: none;
+}
+
+#contact_container input[type="submit"]:hover
+{
+	background-color: rgb(0, 150, 0);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	cursor: pointer;
+}
+
+#contact_container .required_fields
+{
+	margin-top: 25px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+	text-align: center;
+}
+
+#contact_home_button a
+{
+	display: flex;
+	align-items: center;
+
+	height: 37.5px;
+	width: 175px;
+
+	margin: 100px auto 0 auto;
+
+	background-color: rgb(225, 225, 225);
+
+	border-radius: 25px;
+
+	font-family: 'open_sanssemibold', Arial, sans-serif;
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+	text-align: center;
+}
+
+#contact_home_button a:hover
+{
+	background-color: rgb(50, 50, 50);
+
+	box-shadow: 0 2.5px 5px rgb(175, 175, 175);
+
+	color: rgb(255, 255, 255);
+}
+
+/* --- PAGE DE CONTACT (contact.php) --- */
+
+/* --- FOOTER (footer.php) --- */
+
+footer
+{
+	margin-top: auto;
+	
+	background-color: rgb(255, 255, 255);
+}
+
+#footer_container
+{
+	display: flex;
+	align-items: center;
+
+	height: 100px;
+	width: 50%;
+
+	margin: auto;
+
+	border-top: 1px solid rgb(250, 5, 5);
+
+	font-family: 'open_sansbold', Arial, sans-serif;
+	text-align: center;
+}
+
+#footer_container p a
+{
+	font-size: 0.75em;
+	color: rgb(50, 50, 50);
+	text-decoration: none;
+}
+
+#footer_container p a:hover
+{
+	color: rgb(250, 5, 5);
+}
+
+.footer_divider_bar
+{
+	margin: 0 7.5px;
+
+	font-size: 0.75em;
+	color: rgb(250, 5, 5);
+}
+
+#footer_color_headband
+{
+	display: flex;
+	height: 12.5px;
+}
+
+#footer_color_001
+{
+	width: 37.5%;
+
+	background-color: rgb(250, 5, 5);
+}
+
+#footer_color_002
+{
+	width: 25%;
+
+	background-color: rgb(50, 50, 50);
+}
+
+#footer_color_003
+{
+	width: 37.5%;
+
+	background-color: rgb(225, 225, 225);
+}
+
+/* --- FOOTER (footer.php) --- */

@@ -1,0 +1,593 @@
+/* --- MOBILE --- */
+
+@media all and (max-device-width: 480px)
+{
+	/* --- HEADER (header.php) --- */
+
+	#header_container
+	{
+		display: block;
+
+		height: 150px;
+		width: auto;
+
+		margin: auto;
+	}
+
+	#header_container > a, img
+	{
+		display: block;
+
+		width: 37.5px;
+
+		margin: 0 auto 25px auto;
+		padding-top: 12.5px;
+	}
+
+	#header_all_user_information
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	#header_user_information
+	{
+		width: 62.5%;
+
+		text-align: right;
+	}
+
+	#header_login_button, #header_logout_button
+	{
+		width: 37.5%;
+	}
+
+	#header_login_button a, #header_logout_button a
+	{
+		height: 25px;
+		width: 25px;
+
+		background-size: 12.5px;
+		background-position: center;
+	}
+
+	#header_login_button a p, #header_logout_button a p
+	{
+		display: none;
+	}
+
+	#header_login_button a:hover
+	{
+		background: url(/gbaf/picture/icon/login_logout_white.png) rgb(0, 150, 0) no-repeat center;
+		background-size: 12.5px;
+	}
+
+	#header_logout_button a:hover
+	{
+		background: url(/gbaf/picture/icon/login_logout_white.png) rgb(250, 5, 5) no-repeat center;
+		background-size: 12.5px;
+	}
+
+	/* --- HEADER (header.php) --- */
+
+	/* --- PAGE DE CONNEXION (index.php) --- */
+
+	#login_container
+	{
+		width: auto;
+
+		margin: 50px 25px 50px 25px;
+	}
+
+	#login_logo
+	{
+		display: block;
+
+		width: 75px;
+
+		margin: 0 auto 50px auto;
+	}
+
+	#login_container h1
+	{
+		margin-bottom: 50px;
+	}
+
+	/* --- PAGE DE CONNEXION (index.php) --- */
+
+	/* --- PAGE DU COMPTE A LA PREMIERE CONNEXION (account_first_connection.php) --- */
+
+	#account_first_connection_container
+	{
+		width: auto;
+
+		margin: 50px 25px 50px 25px;
+	}
+
+	#account_first_connection_logo
+	{
+		display: block;
+
+		width: 75px;
+
+		margin: 0 auto 50px auto;
+	}
+
+	#account_first_connection_container h1
+	{
+		margin-bottom: 50px;
+	}
+
+	#account_first_connection_container a
+	{
+		margin: 50px auto 0 auto;
+	}
+
+	/* --- PAGE DU COMPTE A LA PREMIERE CONNEXION (account_first_connection.php) --- */
+
+	/* --- PAGE DU COMPTE (account.php) --- */
+
+	#account_container
+	{
+		width: auto;
+
+		margin: 100px 25px 50px 25px;
+		padding-top: 100px;
+	}
+
+	#account_container h1
+	{
+		margin-bottom: 50px;
+	}
+
+	#account_home_button a
+	{
+		margin: 50px auto 0 auto;
+	}
+
+	/* --- PAGE DU COMPTE (account.php) --- */
+
+	/* --- PAGE DE MOT DE PASSE OUBLIÉ (forgot_password.php) --- */
+
+	#forgot_password_container
+	{
+		width: auto;
+
+		margin: 50px 25px 50px 25px;
+	}
+
+	#forgot_password_logo
+	{
+		margin: 0 auto 50px auto;
+	}
+
+	#forgot_password_container h1
+	{
+		margin-bottom: 50px;
+	}
+
+	#forgot_password_login_page_button a
+	{
+		margin: 50px auto 0 auto;
+	}
+
+	/* --- PAGE DE MOT DE PASSE OUBLIÉ (forgot_password.php) --- */
+
+	/* --- PAGE D'ACCUEIL (homepage.php) --- */
+
+	#homepage_container
+	{
+		width: auto;
+
+		margin: 0px auto 100px auto;
+		padding-top: 150px;
+	}
+
+	#homepage_container h2
+	{
+		width: auto;
+
+		padding: 0  50px 0 50px;
+	}
+
+	#homepage_container h2 + p
+	{
+		width: auto;
+
+		margin-bottom: 100px;
+		padding: 0 50px 0 50px;
+
+		font-family: 'open_sansregular', Arial, sans-serif;
+		font-size: 1em;
+		color: rgb(50, 50, 50);
+		text-align: justify;
+	}
+
+	#actors_description
+	{
+		display: block;
+
+		margin: 0 25px 50px 25px;
+	}
+
+	#actors_description #actors_logo
+	{
+		width: 100%;
+
+		border-radius: 25px 0 0 25px;
+	}
+
+	#actors_description #actors_logo img
+	{
+		width: 100%;
+
+		border-radius: 25px 25px 0 0;
+	}
+
+	#actors_description h3
+	{
+		margin-right: 25px;
+		padding: 25px 0 12.5px 25px;
+
+		color: rgb(50, 50, 50);
+	}
+
+	#actors_description h3 + p
+	{
+		width: auto;
+
+		margin: 0;
+		padding: 0 25px 12.5px 25px;
+	}
+
+	#read_more
+	{
+		margin-top: 25px;
+	}
+
+	#read_more a
+	{
+		width: 100%;
+
+		margin: 7.5px;
+	}
+
+	/* --- PAGE D'ACCUEIL (homepage.php) --- */
+
+	/* --- PAGE ACTEURS ET PARTENAIRES (actors_description.php) --- */
+
+	#actors_description_container
+	{
+		width: auto;
+
+		margin: 100px 25px 50px 25px;
+		padding-top: 100px;
+	}
+
+	#actors_presentation #actors_logo
+	{
+		text-align: center;
+	}
+
+	#actors_presentation #actors_logo img
+	{
+		height: 125px;
+		width: auto;
+	}
+
+	#actors_presentation h2
+	{
+		margin-top: 50px;
+	}
+
+	#actors_presentation h2 + p
+	{
+		margin-bottom: 50px;
+	}
+
+	#comment_container fieldset
+	{
+		width: auto;
+
+		padding: 12.5px;
+	}
+
+	#comment_option
+	{
+		display: block;
+
+		margin: 12.5px 0 25px 0;
+	}
+
+	#comments_number
+	{
+		margin-bottom: 25px;
+
+		text-align: center;
+	}
+
+	#comment_option #new_comment_button a
+	{
+		margin-bottom: 25px;
+	}
+	
+	#like_dislike_button_content
+	{
+		display: flex;
+		justify-content: space-around;
+
+		height: 37.5px;
+		width: auto;
+	}
+
+	#like_button, #dislike_button
+	{
+		margin: 0;
+	}
+
+	#like_button img, #dislike_button img
+	{
+		width: 25px;
+
+		margin: 0 0 0 25px;
+	}
+
+	#cancel_button a
+	{
+		width: 100%;
+
+		margin: 0;
+	}
+
+	#comment_container input[type="submit"]
+	{
+		width: 100%;
+
+		margin: 7.5px 0 25px 0;
+	}
+
+	/* --- PAGE ACTEURS ET PARTENAIRES (actors_description.php) --- */
+
+	/* --- PAGE DES MENTIONS LEGALES (legal_notices.php) --- */
+
+	#legal_notices_container
+	{
+		width: auto;
+
+		margin: 100px 25px 50px 25px;
+	}
+
+	#legal_notices_container h1
+	{
+		margin-bottom: 50px;
+	}
+
+	#legal_notices_summary
+	{
+		margin-bottom: 50px;
+	}
+
+	#legal_notices_container p + ul li
+	{
+		padding: 0 25px 0 25px;
+	}
+
+	#legal_notices_top_page_button a
+	{
+		margin: 50px auto 0 auto;
+	}
+
+	/* --- PAGE DES MENTIONS LEGALES (legal_notices.php) --- */
+
+	/* --- PAGE DE CONTACT (contact.php) --- */
+
+	#contact_container
+	{
+		width: auto;
+
+		margin: 100px 25px 50px 25px;
+	}
+
+	#contact_container h1
+	{
+		margin-bottom: 50px;
+	}
+
+	#contact_home_button a
+	{
+		margin: 50px auto 0 auto;
+	}
+
+	/* --- PAGE DE CONTACT (contact.php) --- */
+
+	/* --- FOOTER (footer.php) --- */
+
+	#footer_container
+	{
+		width: 100%;
+	}
+
+	/* --- FOOTER (footer.php) --- */
+}
+
+/* --- MOBILE --- */
+
+/* --- TABLET --- */
+
+@media all and (min-device-width: 480px) and (max-device-width: 1024px)
+{
+	/* --- HEADER (header.php) --- */
+
+	#header_container
+	{
+		width: 100%;
+	}
+
+	#header_container > a
+	{
+		margin-left: 125px;
+	}
+
+	#header_login_button, #header_logout_button
+	{
+		margin-right: 125px;
+	}
+
+	/* --- HEADER (header.php) --- */
+
+	/* --- PAGE DE CONNEXION (index.php) --- */
+
+	#login_container
+	{
+		width: auto;
+
+		margin: 50px 125px 50px 125px;
+	}
+
+	#login_logo
+	{
+		width: 125px;
+
+		margin: 150px auto 100px auto;
+	}
+
+	#login_container h1
+	{
+		margin-bottom: 100px;
+	}
+
+	/* --- PAGE DE CONNEXION (index.php) --- */
+
+	/* --- PAGE DU COMPTE A LA PREMIERE CONNEXION (account_first_connection.php) --- */
+
+	#account_first_connection_container
+	{
+		width: auto;
+
+		margin: 50px 125px 50px 125px;
+	}
+
+	#account_first_connection_logo
+	{
+		width: 125px;
+
+		margin: 150px auto 100px auto;
+	}
+
+	#account_first_connection_container h1
+	{
+		margin-bottom: 100px;
+
+		color: rgb(50, 50, 50);
+		text-align: center;
+	}
+
+	/* --- PAGE DU COMPTE A LA PREMIERE CONNEXION (account_first_connection.php) --- */
+
+	/* --- PAGE DU COMPTE (account.php) --- */
+
+	#account_container
+	{
+		width: auto;
+
+		margin: 100px 125px 100px 125px;
+	}
+
+	#account_container h1
+	{
+		margin-bottom: 100px;
+
+		color: rgb(50, 50, 50);
+		text-align: center;
+	}
+
+	/* --- PAGE DU COMPTE (account.php) --- */
+
+	/* --- PAGE DE MOT DE PASSE OUBLIÉ (forgot_password.php) --- */
+
+	#forgot_password_container
+	{
+		width: auto;
+
+		margin: 150px 125px 50px 125px;
+	}
+
+	#forgot_password_logo
+	{
+		width: 125px;
+	}
+
+	/* --- PAGE DE MOT DE PASSE OUBLIÉ (forgot_password.php) --- */
+
+	/* --- PAGE D'ACCUEIL (homepage.php) --- */
+
+	#homepage_container
+	{
+		width: 75%;
+
+		margin: 0 auto 100px auto;
+		padding-top: 100px;
+	}
+
+	#homepage_hero
+	{
+		padding: 50px 125px;
+	}
+
+	#homepage_container h2
+	{
+		padding-left: 125px;
+	}
+
+	#homepage_container h2 + p
+	{
+		padding: 0 125px 0 125px;
+	}
+
+	/* --- PAGE D'ACCUEIL (homepage.php) --- */
+
+	/* --- PAGE ACTEURS ET PARTENAIRES (actors_description.php) --- */
+
+	#actors_description_container
+	{
+		width: auto;
+
+		margin: 100px 125px 100px 125px;
+		padding-top: 100px;
+	}
+
+	/* --- PAGE ACTEURS ET PARTENAIRES (actors_description.php) --- */
+
+	/* --- PAGE DES MENTIONS LEGALES (legal_notices.php) --- */
+
+	#legal_notices_container
+	{
+		width: auto;
+
+		margin: 100px 125px 100px 125px;
+	}
+
+	/* --- PAGE DES MENTIONS LEGALES (legal_notices.php) --- */
+
+	/* --- PAGE DE CONTACT (contact.php) --- */
+
+	#contact_container
+	{
+		width: auto;
+
+		margin: 100px 125px 100px 125px;
+	}
+
+	/* --- PAGE DE CONTACT (contact.php) --- */
+
+	/* --- FOOTER (footer.php) --- */
+
+	#footer_container
+	{
+		width: 100%;
+	}
+
+	/* --- FOOTER (footer.php) --- */
+}
+
+/* --- TABLET --- */
