@@ -80,7 +80,7 @@
                                 $_SESSION['id_user'] = $data_login['id_user'];
                                 $_SESSION['password'] = $data_login['password'];
 
-                                header('Location:account_first_connection_test.php');
+                                header('Location:account_first_connection.php');
                             }
 
                             else
