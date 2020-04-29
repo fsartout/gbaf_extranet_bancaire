@@ -89,9 +89,9 @@
                         include('php_processing/database_connection.php');
 
                         /* Recuperation du commentaire de l'utilisateur */
-                        $result = $bdd -> prepare('SELECT * FROM post WHERE id_actor = :id_actor');
+                        $result = $bdd -> prepare('SELECT * FROM post WHERE id_user = :id_user AND id_actor = :id_actor');
 
-                        $result -> execute(array('id_actor' => $_GET['id_actor']));
+                        $result -> execute(array('id_user' => $_SESSION['id_user'], 'id_actor' => $_GET['id_actor']));
 
                         $data_user_comment = $result -> fetch();
 
@@ -106,7 +106,7 @@
                         {
 
                             /* Si l'utilisateur a laisse un commentaire */
-                            if ($data_user_comment['post'])
+                            if ($data_user_comment['id_user'])
                             {
 
                             ?>
