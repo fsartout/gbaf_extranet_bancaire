@@ -124,13 +124,7 @@
                             <?php
 
                             /* Verification des variable $_SESSION */
-                            if (isset($_SESSION['id_user'],
-                                $_SESSION['firstname'],
-                                $_SESSION['name'],
-                                $_SESSION['username'],
-                                $_SESSION['password'],
-                                $_SESSION['question'],
-                                $_SESSION['answer']))
+                            if (isset($_SESSION['id_user']))
 
                             {
 
@@ -524,13 +518,8 @@
                         /* Connexion a la BDD */
                         include('php_processing/database_connection.php');
 
-                        /* Recuperation du contenu des commentaires */
-                        $result = $bdd -> prepare('SELECT
-                            id_user,
-                            id_actor,
-                            post,
-                            DATE_FORMAT(date_add, \'%d/%m/%Y à %Hh%i\')
-                            AS french_comment_date FROM post WHERE id_actor = :id_actor ORDER BY date_add DESC');
+                        /* Recuperation du contenu des commentaires avec jointure de table */
+                        $result = $bdd -> prepare('SELECT account.firstname, post.id_post, post.id_user, post.post, DATE_FORMAT(date_add, \'%d/%m/%Y à %Hh%i\') AS french_comment_date FROM post INNER JOIN account ON post.id_user = account.id_user WHERE id_actor = :id_actor ORDER BY date_add DESC');
 
                         $result -> execute(array('id_actor' => $_GET['id_actor']));
 
@@ -542,26 +531,8 @@
 
                         <div id="comment_content_container">
 
-                            <p id="firstname_comment">
-
-                                <?php
-
-                                /* Connexion a la BDD */
-                                include('php_processing/database_connection.php');
-
-                                /* Recuperation du prenom de l'utilisateur du commentaire */
-                                $result = $bdd -> prepare('SELECT * FROM account WHERE id_user = :id_user');
-
-                                $result -> execute(array('id_user' => $data_comment['id_user']));
-
-                                $data_firstname_user_comment = $result -> fetch();
-
-                                {
-                                    echo htmlspecialchars($data_firstname_user_comment['firstname']);
-                                }
-
-                                ?>
-
+                            <p id="firstname_comment"> 
+                                <?php echo htmlspecialchars($data_comment['firstname']); ?>
                             </p>
 
                             <p id="date_comment">
@@ -571,6 +542,7 @@
                             <p id="user_comment">
                                 <?php echo nl2br(htmlspecialchars($data_comment['post'])); ?>
                             </p>
+
                         </div>
 
                         <?php
